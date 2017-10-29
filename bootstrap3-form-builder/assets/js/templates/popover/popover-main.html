@@ -1,0 +1,11 @@
+<form class='form'>
+  
+    <% var compiled =  _.reduce(items, function(str, v, k){ %>
+      <% v["name"] = k; %>
+      <% return str + popoverTemplates[v["type"]](v); %>
+    <% }, "") %>
+    <%= compiled %>
+    <hr/>
+    <button type="button" id="save" class='btn btn-info'>Save</button><button type="button" id="cancel" class='btn btn-danger'>Cancel</button>
+  
+</form>

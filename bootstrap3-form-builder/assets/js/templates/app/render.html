@@ -1,0 +1,43 @@
+<h3>Settings for your webform script interface</h3>
+<form action="/save" method="POST">
+	<!-- HTML for form -->
+	<textarea id="render" name ="render" class="col-md-12" style="display:none"></textarea>
+	<!-- <textarea id="render" name ="render" class="col-md-12"></textarea> -->
+	
+	<!-- Select script type -->
+	<div class="form-group">
+		<label for="script_type_select">Select script type</label>
+		<select name="script_type_select" class="form-control" id="script_type_select">
+			<option>Python</option>
+			<option>SAS</option>
+			<option>Batch</option>
+			<option>Other executable</option>
+		</select>
+	</div>
+	
+	<!-- File Button --> 
+	<div class="form-group">
+		<label for="path_to_script_button">Select script to launch</label>
+		<input name="path_to_script_button" id="path_to_script_button" type="file" style="width:100%">
+	</div>
+	
+	<!-- Checkbox for relative script path -->
+	<!-- <div class="form-group"> -->
+		<!-- <label for="path_settings">Script path settings</label> -->
+
+		<!-- <div class="checkbox"> -->
+			<!-- <label for="path_settings_0"> -->
+				<!-- <input name="path_settings_0" id="path_settings_0" type="checkbox" value="True"> -->
+				<!-- Handle script path as relative -->
+			<!-- </label> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	<hr>
+
+	<!-- Save Button --> 
+	<div class="form-group">
+		<label for="savebutton">Save form</label>
+		<button name="savebutton" class="btn btn-primary" id="savebutton" type="submit" value="save", style="float:right; width:100px">Save</button>
+	</div>
+</form>
