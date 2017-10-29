@@ -1,3 +1,5 @@
+Download Windows binary [here](https://github.com/MichaelSchreier/WebformUI/releases/download/0.9.0/WebformUI.zip).
+
 # Webform UI
 Webform UI is a simple _drag and drop_ interface editor and script launcher in your browser. Interfaces built with webform UI can be added to any program or script that takes command line arguments. While webform UI is displayed in the browser all code runs on entirely on your on machine and does not require an internet connection.
 In particular, webform UI can be used to distribute e.g. SAS or Python scripts, SQL queries and so on to end users not familiar with the script language themselves.
